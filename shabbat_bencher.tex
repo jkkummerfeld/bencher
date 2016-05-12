@@ -1,0 +1,286 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+
+\usepackage{xltxtra}
+\defaultfontfeatures{Scale=MatchLowercase,Mapping=tex-text}
+\setmainfont{EB Garamond}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{graphicx}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage[numerals=hebrew]{hebrew}
+\newfontfamily\hebrewfont[Script=Hebrew]{Adobe Hebrew}
+
+\newcommand{\HgInst}[1]{{\noindent\sffamily{\bfseries{#1}}}}
+\newcommand{\HgEllipsis}{\ensuremath{\left[\ldots\right]}}
+\newcommand{\HgSource}[1]{\hfill{\small---\itshape{#1}}}
+\newcommand{\hchapter}[1]{
+  \begin{hebrew}
+    \begin{Spacing}{.97}
+      \newpage
+      \strut
+
+      \vspace{.15em}
+
+      \begin{flushleft}
+      \noindent\Huge #1
+      \end{flushleft}
+
+      \vspace{1em}
+    \end{Spacing}
+  \end{hebrew}
+}
+\newcommand{\HgHL}[1]{{\Large\textbf{#1}\par\noindent\\[-.5em]}}
+\newcommand{\HgFill}{\vfill \hrule \vfill}
+
+\newenvironment{HgEnglish}{\strut\\\noindent}{\vspace{1em}}
+\newenvironment{HgTranslit}{\strut\\\noindent\begin{itshape}}{\end{itshape}\vspace{1em}}
+\newenvironment{HgHebrew}{\begin{hebrew}\strut\\\noindent\LARGE}{\end{hebrew}}
+
+\newlength{\translitSkip}
+\setlength{\translitSkip}{11pt}
+\newcommand{\blankLineTranslit}{\\[-0.5pt]}
+\newcommand{\blankLine}{\\[6pt]}
+
+\newcommand{\CSrc}{}
+\newcommand{\JSrc}{\textsuperscript{\upshape{[J]}}}
+\newcommand{\LSrc}{\textsuperscript{\upshape{[L]}}}
+\newcommand{\SSrc}{\textsuperscript{\upshape{[S]}}}
+
+\begin{document}
+
+\pagestyle{empty}
+\strut
+\vfill
+\begin{center}
+  \begin{HgHebrew}
+  \fontsize{120pt}{120pt}
+  \selectfont
+  \hspace{-10pt}
+  ש
+  \hfill
+  ב
+  \hfill
+  ת
+  \end{HgHebrew}
+  \vspace{3em}
+
+  \fontsize{28pt}{28pt}
+  \selectfont
+  The 
+  1044
+  \\[.2em]
+  \fontsize{50pt}{50pt}
+  \selectfont
+  Free Shabbat Bencher
+\end{center}
+\vspace{4cm}
+\vfill
+
+\pagebreak
+\section*{Candles}
+
+\HgInst{Light two or more candles, and sing:}
+
+\noindent
+\begin{minipage}[t]{.5\linewidth}
+\begin{HgTranslit}
+Barukh ata Adonai Eloheinu Melekh ha‑olam \\[\translitSkip]
+asher kid'shanu b'mitzvotav v'tzivanu l'hadlik ner shel Shabbat.
+\end{HgTranslit}
+\end{minipage}
+\begin{minipage}[t]{.5\linewidth}
+\vspace{-5mm}
+\begin{HgHebrew}
+\strut בָּרוּךְ אַתָּה אַדֹנָי אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם \\
+\strut אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו וְצִוָּנוּ לְהַדְלִיק נֵר שֶׁל שַׁבָּת
+\end{HgHebrew}
+\end{minipage}
+
+\vspace{-2mm}
+\begin{HgEnglish}
+Blessed are You, Adonai our God, Sovereign of the universe, who has sanctified us with commandments and commanded us to light Shabbat candles.
+\end{HgEnglish}
+
+\section*{Shabbat Shalom! \hfill \begin{hebrew}\huge שָׁלוֹם שַׁבָּת \end{hebrew}}
+
+\begin{minipage}[t]{.5\linewidth}
+\begin{HgTranslit}
+Sha-bat Sha-lom! Sha-bat Sha-lom! \\[\translitSkip]
+Sha-bat, Sha-bat, Sha-bat, Sha-bat Sha-lom! \\[\translitSkip]
+Sha-bat Sha-lom (hey!) Sha-bat Sha-lom (hey!) \\[\translitSkip]
+Sha-bat, Sha-bat, Sha-bat, Sha-bat Sha-lom! \\[\translitSkip]
+\end{HgTranslit}
+\end{minipage}
+\begin{minipage}[t]{.5\linewidth}
+\vspace{-5mm}
+\begin{HgHebrew}
+\strut שַׁבָּת שָׁלוֹם! שַׁבָּת שָׁלוֹם! \\
+\strut שַׁבָּת שַׁבָּת שַׁבָּת שַׁבָּת שָׁלוֹם! \\
+\strut שַׁבָּת שָׁלוֹם! שַׁבָּת שָׁלוֹם! \\
+\strut שַׁבָּת שַׁבָּת שַׁבָּת שַׁבָּת שָׁלוֹם! \\
+\end{HgHebrew}
+\end{minipage}
+
+\section*{Shalom Aleichem \hfill \begin{hebrew}\huge עֲלֵיכֶם שָׁלוֹם\end{hebrew}}
+
+\noindent
+\begin{minipage}[t]{.5\linewidth}
+\begin{HgTranslit}
+Shalom alechem malachei ha-sharet malachei el-yon, \\[\translitSkip]
+mi-melech malchei ha-malachim Ha-Kadosh Baruch Hu. \\[\translitSkip]
+\blankLineTranslit
+Bo'achem le-shalom malachei ha-shalom malachei el-yon, \\[\translitSkip]
+mi-melech malchei ha-malachim Ha-Kadosh Baruch Hu. \\[\translitSkip]
+\blankLineTranslit
+Barchuni le-shalom malachei ha-shalom malachei el-yon, \\[\translitSkip]
+mi-melech malchei ha-malachim Ha-Kadosh Baruch Hu. \\[\translitSkip]
+\blankLineTranslit
+Tzet'chem le-shalom malachei ha-shalom malachei el-yon, \\[\translitSkip]
+mi-melech malchei ha-malachim Ha-Kadosh Baruch Hu. \\[\translitSkip]
+\end{HgTranslit}
+\end{minipage}
+\begin{minipage}[t]{.5\linewidth}
+\vspace{-5mm}
+\begin{HgHebrew}
+\strut שָׁלוֹם עֲלֵיכֶם מַלְאֲכֵי הַשָּׁרֵת מַלְאֲכֵי עֶלְיוֹן \\
+\strut מִמֶּלֶךְ מַלְכֵי הַמְּלָכִים הַקָּדוֹשׁ בָּרוּךְ הוּא \\
+\blankLine
+\strut בּוֹאֲכֶם לְשָׁלוֹם מַלְאֲכֵי הַשָּׁלוֹם מַלְאֲכֵי עֶלְיוֹן \\
+\strut מִמֶּלֶךְ מַלְכֵי הַמְּלָכִים הַקָּדוֹשׁ בָּרוּךְ הוּא \\
+\blankLine
+\strut בָּרְכוּנִי לְשָׁלוֹם מַלְאֲכֵי הַשָּׁלוֹם מַלְאָכֵי עֶלְיוֹן \\
+\strut מִמֶּלֶךְ מַלְכֵי הַמְּלָכִים הַקָּדוֹשׁ בָּרוּךְ הוּא \\
+\blankLine
+\strut צֵאתְכֶם לְשָׁלוֹם מַלְאֲכֵי הַשָּׁלוֹם מַלְאָכֵי עֶלְיוֹן \\
+\strut מִמֶּלֶךְ מַלְכֵי הַמְּלָכִים הַקָּדוֹשׁ בָּרוּךְ הוּא \\
+\end{HgHebrew}
+\end{minipage}
+
+\noindent
+\begin{HgEnglish}
+Peace unto you, ministering angels, messengers of the Most High, the supreme Sovereign of sovereigns, the Holy One, blessed be God. \\
+May your coming be in peace, angels of peace, messengers of the Most High, the supreme Sovereign of sovereigns, the Holy One, blessed be God. \\
+Bless me with peace, angels of peace, messengers of the Most High, the supreme Sovereign of sovereigns, the Holy One, blessed be God. \\
+May your departure be in peace, angels of peace, messengers of the Most High, the supreme Sovereign of sovereigns, the Holy One, blessed be God. \\
+\end{HgEnglish}
+
+%%%\hfill
+
+\pagebreak
+\section*{Kiddush}
+
+\HgInst{Pour a cup of wine, and sing:}
+
+\noindent
+\begin{minipage}[t]{.5\linewidth}
+\begin{HgTranslit}
+Va'yihi erev va'y'hi voker, Yom ha'shishi. \\[\translitSkip]
+Va'yihulu ha'shamayim v'haaretz v'hol tzva'am. \\[\translitSkip]
+Va'yihal Elohim ba'yom ha'shvi'i milahto asher asah, \\[\translitSkip]
+va'yishbot ba'yom ha'shvi'i mikolmlahto asher asah. \\[\translitSkip]
+Va'yivareh Elohim et yom ha'shvi'i va'yikadeish oto, \\[\translitSkip]
+ki vo shavat mikol milahto, asher bara Elohim la'asot. \\[\translitSkip]
+\strut \\[\translitSkip]
+Barukh atah Adonai, Eloheinu melekh ha'olam, \\[\translitSkip]
+borei pri ha'gafen. \\[\translitSkip]
+\strut \\[\translitSkip]
+Barukh atah Adonai, Eloheinu melekh ha'olam, \\[\translitSkip]
+asher kidshanu b'mitzvotav v'ratzah banu, \\[\translitSkip]
+v'shabbat kadsho b'ahava v'ratzon hinhilanu, \\[\translitSkip]
+zikaron l'maseh bireshit. \\[\translitSkip]
+Ki hu yom tehilah limikra'eh kodesh, \\[\translitSkip]
+zeher l'Yitziat mitrayim. \\[\translitSkip]
+Ki vanu beharta v'otanu kidashta mikol ha'amim, \\[\translitSkip]
+v'shabbat kadshihah b'ahava uviratzon hinhaltanu. \\[\translitSkip]
+Barukh atah Adonai, mikadesh ha'shabbat. \\[\translitSkip]
+\end{HgTranslit}
+\end{minipage}
+\begin{minipage}[t]{.5\linewidth}
+\vspace{-5mm}
+\begin{HgHebrew} 
+\strut וַיְהִי עֶרֶב וַיְהִי בֹקֶר יוֹם הַשִּׁשִּׁי׃ \\
+\strut וַיְכֻלּוּ הַשָּׁמַיִם וְהָאָרֶץ וְכָל צְבָאָם׃ \\
+\strut וַיְכַל אֱלֹהִים בַּיוֹם הַשְּׁבִיעי מְלַאכְתּוֹ אֲשֶׁר עָשָׂה \\
+\strut וַיִשְׁבֹּת בַּיּוֹם הַשְּׁבִיעי מִכָּל מְלַאכְתּוֹ אֲשֶׁר עָשָׂה׃ \\
+\strut וַיְבָרֶךְ אֱלֹהִים אֶת יוֹם הַשְּׁבִיעי וַיְקַדֵּשׁ אֹתוֹ \\
+\strut כִּי בוֹ שָׁבַת מִכָּל מְלַאכְתּוֹ אֲשֶׁר בָּרָא אֱלֹהִים לַעֲשׂוֹת׃ \\
+%%%\strut \\
+%%%\strut סַבְרִי מָרָנָן!  \\
+\strut \\
+\strut בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם \\
+\strut בּוֹרֵא פְּרִי הַגָּפֶן.  \\
+\strut \\
+\strut בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, \\
+\strut אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו וְרַָצָה בָנוּ, \\
+\strut וְשַׁבָּת קָדְשׁוֹ בְּאַהֲבָה וּבְרָצוֹן הִנְחִילָנוּ, \\
+\strut זִכָּרוֹן לְמַעֲשֵׂה בְרֵאשִׁית.  \\
+\strut כִּי הוּא יוֹם תְּחִלָּה לְמִקְרָאֵי קֹדֶשׁ \\
+\strut זֵכֶר לִיצִיאַת מִצְרָיִם.  \\
+\strut כִּי בָנוּ בָחַרְתָּ וְאוֹתָנוּ קִדַּשְׁתָּ מִכָּל הָעַמִּים \\
+\strut וְשַׁבָּת קָדְשְׁךָ בְּאַהֲבָה וּבְרָצוֹן הִנְחַלְתָּנוּ.  \\
+\strut בָּרוּךְ אַתָּה יְיָ מְקַדֵּשׁ הַשַׁבָּת.  \\
+\end{HgHebrew}
+\end{minipage}
+
+\vspace{-5mm}
+\begin{HgEnglish}
+  Evening became morning: The sixth day. And the heavens and the earth and all that filled them were complete. And on the seventh day God completed the labor God had performed, and God refrained on the seventh day from all the labor which God had performed. And God blessed the seventh day and God sanctified it, for God then refrained from all God's labor - from the act of creation that God had performed. \\
+  \\
+  Blessed are You, Adonai our God, Sovereign of the universe, Creator of the fruit of the vine. \\
+\\
+  Blessed are You, Adonai our God, Sovereign of the universe who finding favor with us, sanctified us with mitzvot.
+  In love and favor, You made the holy Shabat our heritage as a reminder of the work of Creation.
+  As first among our sacred days, it recalls the Exodus from Egypt.
+  You chose us and set us apart from the peoples.
+  In love and favor You have given us Your holy Shabbat as an inheritance.
+\end{HgEnglish}
+\vfill
+\pagebreak
+
+\section*{Bread}
+
+\HgInst{Uncover two loaves of Challah, touch both of them, and sing:}
+
+\begin{minipage}[t]{.5\linewidth}
+\begin{HgTranslit}
+Baruch Atah Adonai, Eloheinu Melech haolam, \\[\translitSkip]
+Hamotzi lechem min haaretz.
+\end{HgTranslit}
+\end{minipage}
+\begin{minipage}[t]{.5\linewidth}
+\vspace{-5mm}
+\begin{HgHebrew}
+\strut בָּרוּךְ אַתָּה יְיָ אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם, \\
+\strut הַמּוֹצִיא לֶחֶם מִן הָאָרֶץ.
+\end{HgHebrew}
+\end{minipage}
+
+\begin{HgEnglish}
+Blessed are You, Adonai our God, Sovereign of the universe, who brings forth bread from the earth.
+\end{HgEnglish}
+
+\section*{Sources}
+
+The following sources have been instrumental in assembling this material:
+
+\begin{itemize}
+  \item {\bfseries Hebrew text} is traditional; my references have been Wikipedia and the Chabad website.
+  \item {\bfseries English transliterations} are adapted from Wikipedia, reformjudaism.org
+  \item {\bfseries English translations} are adapted from reformjudaism.org
+  \item Image below is from bearbasics.com
+\end{itemize}
+
+\noindent
+All texts not in the public domain are subject to the copyright of their
+respective owners, and included here for educational purposes.
+
+\vfill
+\begin{center}
+  \includegraphics[width=4cm]{oski.png}
+\end{center}
+
+\end{document}
